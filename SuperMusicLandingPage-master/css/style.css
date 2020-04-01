@@ -71,7 +71,7 @@ footer {
   text-align: center;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   nav ul {
     align-items: center;
     display: flex;
