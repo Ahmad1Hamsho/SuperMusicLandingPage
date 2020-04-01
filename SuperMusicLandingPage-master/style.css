@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 2em;
+}
+
+nav {
+  background-color: yellow;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav button {
+  background: none;
+  border: none;
+}
+
+nav ul {
+  display: none;
+}
+
+#welcome {
+  padding: 2em;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+}
+
+.welcome-text {
+  grid-column: 1/6;
+  font-size: 1.5em;
+}
+
+.welcome-img {
+  border-radius: 50%;
+  overflow: hidden;
+  grid-column: 6/9;
+}
+
+.welcome-img img {
+  width: 200%;
+}
+
+#features {
+  background-color: lightgoldenrodyellow;
+}
+
+#features ul {
+}
+
+#pricing {
+}
+
+.pricing-level {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+}
+
+footer {
+  color: white;
+  padding: 4em 2em 2em;
+  background-color: #333;
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  nav ul {
+    align-items: center;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+  }
+  nav ul li {
+    display: inline;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  .welcome-text {
+    grid-column: 1/5;
+    font-size: 2em;
+  }
+
+  .welcome-img {
+    border-radius: 50%;
+    overflow: hidden;
+    grid-column: 5/9;
+    width: 100%;
+    height: 70%;
+  }
+  #welcome {
+    padding: 2em;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    height: 50vh;
+    gap: 10px;
+  }
+
+  #features {
+    background-color: lightgoldenrodyellow;
+    height: 10vh;
+    font-size: 1.5em;
+    font-weight: bolder;
+  }
+  #features h1 {
+    font-weight: bolder;
+  }
+
+  #features ul {
+    position: relative;
+    left: 19vw;
+    bottom: 6vh;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #features ul li {
+    font-size: 1em;
+    list-style: circle;
+  }
+  #features ul li:first-child {
+    position: relative;
+    bottom: 3vh;
+  }
+  #features ul li:nth-child(3) {
+    position: relative;
+    bottom: 3vh;
+  }
+
+  #pricing {
+    height: 70vh;
+    padding-top: 1vh;
+    font-size: 2em;
+  }
+  #pricing h1 {
+    font-weight: bolder;
+  }
+
+  .pricing-levels {
+    margin-left: 17%;
+  }
+  .pricing-levels .pricing-level ul {
+    margin-left: 25%;
+    list-style: "✓";
+  }
+}
